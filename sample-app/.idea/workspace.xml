@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c2c420a-0030-4a97-927b-7b57ff9c0f2b" name="Default Changelist" comment="" />
+    <list default="true" id="5c2c420a-0030-4a97-927b-7b57ff9c0f2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/cli.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/cli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/server.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,11 +21,15 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
     <option name="namespace" value="default" />
   </component>
   <component name="ProjectId" id="1hFhwWEtsEZKyiWxdM74PnWlSiq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +52,24 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="TestGetItemsHandler in github.com/pupimvictor/go-get-started/sample-app" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="sample-app" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/pupimvictor/go-get-started/sample-app" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestGetItemsHandler$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestGetItemsHandler in github.com/pupimvictor/go-get-started/sample-app" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -54,6 +82,22 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="0" y="23" width="2027" height="1417" key="#Go_Modules/0.23.2560.1417/-1920.271.1920.999@0.23.2560.1417" timestamp="1599616176489" />
+    <state width="1238" height="389" key="GridCell.Tab.0.bottom" timestamp="1599695673079">
+      <screen x="0" y="23" width="2560" height="1359" />
+    </state>
+    <state width="1238" height="389" key="GridCell.Tab.0.bottom/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673079" />
+    <state width="1238" height="389" key="GridCell.Tab.0.center" timestamp="1599695673078">
+      <screen x="0" y="23" width="2560" height="1359" />
+    </state>
+    <state width="1238" height="389" key="GridCell.Tab.0.center/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673078" />
+    <state width="1238" height="389" key="GridCell.Tab.0.left" timestamp="1599695673078">
+      <screen x="0" y="23" width="2560" height="1359" />
+    </state>
+    <state width="1238" height="389" key="GridCell.Tab.0.left/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673078" />
+    <state width="1238" height="389" key="GridCell.Tab.0.right" timestamp="1599695673079">
+      <screen x="0" y="23" width="2560" height="1359" />
+    </state>
+    <state width="1238" height="389" key="GridCell.Tab.0.right/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673079" />
     <state x="0" y="23" width="2027" height="1417" key="SettingsEditor" timestamp="1599616806987">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

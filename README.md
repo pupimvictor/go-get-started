@@ -4,7 +4,7 @@
 
 https://www.meetup.com/Staten-Island-Computer-Software-Meetup-Group/events/272794111/
 
-## The Idea
+## Why Go
 
 - simple and small
 - easy to read
@@ -13,7 +13,7 @@ https://www.meetup.com/Staten-Island-Computer-Software-Meetup-Group/events/27279
 - concorrency
 - compiled static linked binary
 
-## The Syntax
+## Syntax
 
 ```go
 //Main
@@ -26,12 +26,9 @@ func main() {
 }
 
 //Vars
-var first string
-first = "This is first string"
-  
-var second = "This is second string"
-  
-third := "This is third string"
+var foo string
+foo = "bar"
+bar := "foo"
 
 // conditional
 if a > b {
@@ -43,10 +40,15 @@ for i := 0; i < c; i++ {
   fmt.Print(i, " ")
 }
 
-// equivalent to a `while` loop
+//while loop
 for c > 0 {
     fmt.Print(c, " ")
     c--
+}
+
+// for each loop
+for i, x := range mySlice {
+  fmt.Println(x)
 }
 ```
 
@@ -74,32 +76,42 @@ func echo(name string) string {
     return name
 }
 
-// equivalent to an Object Method
+// a 'Method'
 func (p Person) greet() {
     fmt.Printf("Hello %s\n" + p.Name)
 }
 
+// multiple return values
 func parseFromJson(payload []byte) (*Person, error) {
     var p Person
     err := json.Unmarshal(payload)
-    json, err := json.Marshal(p)
     if err != nil {
         fmt.Printf("error: %s\n", err.Error)
         return nil, err
     }
     return json, nil
 }
-
-//goroutines
-go func() {
-  fmt.Println("concurrent")
-}
-
-p := Person{}
-go p.greet("John")
 ```
 
+webServer
+```go
+package main
 
+import (
+  "net/http"
+  "log"
+  "os"
+)
+
+func main() {
+  http.HandleFunc("/greet", func(writer http.ResponseWriter, request *http.Request) {
+      writer.WriteHeader(200)
+      writer.Write([]byte("hello, friend"))
+  })
+  log.Printf("listening on port %s", os.Args[1])
+  log.Fatal(http.ListenAndServe(os.Args[1], nil))
+}
+```
 
 ## The Tooling and Standart Library
 
