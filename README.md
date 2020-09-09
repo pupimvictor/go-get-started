@@ -1,4 +1,8 @@
-# Quich Intro to Go
+# A Introduction to Go
+
+## Lightning talk at Staten Island Software Meetup
+
+https://www.meetup.com/Staten-Island-Computer-Software-Meetup-Group/events/272794111/
 
 ## The Idea
 
@@ -75,11 +79,9 @@ func (p Person) greet() {
     fmt.Printf("Hello %s\n" + p.Name)
 }
 
-func (p Person) isAuthorized() boolean {
-    return p.isAdmin
-}
-
-func parseToJson(p Person) ([]byte, error) {
+func parseFromJson(payload []byte) (*Person, error) {
+    var p Person
+    err := json.Unmarshal(payload)
     json, err := json.Marshal(p)
     if err != nil {
         fmt.Printf("error: %s\n", err.Error)
@@ -109,6 +111,12 @@ go fmt
 - web server
 
 ...
+
+## projects
+docker
+k8s
+malware
+
 ## The Community
 
 - Dave Cheney

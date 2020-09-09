@@ -30,7 +30,7 @@ func NewShoppingList(name string) {
 
 func (sl ShoppingList) getItems() ([]Item, error) {
 	if len(sl.items) < 1 {
-		return nil, fmt.Errorf("empty list", nil)
+		return nil, fmt.Errorf( "%s is empty", sl.name)
 	}
 	return sl.items, nil
 }
@@ -41,6 +41,7 @@ func (sl *ShoppingList) addItem(name string, amount int) {
 		Amount: amount,
 	}
 	sl.items = append(sl.items, i)
+	fmt.Printf("%s added to shopping list\n", name)
 }
 
 func GetItemsHandler(w http.ResponseWriter, r *http.Request) {
@@ -53,7 +54,13 @@ func GetItemsHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(err.Error()))
 		return
 	}
-	jsonItems, err := json.Marshal(items)
+
+	var itemsList []string
+	for _, i := range items {
+		itemsList = append(itemsList, fmt.Sprintf("%d %s", i.Amount, i.Name))
+	}
+
+	jsonItems, err := json.Marshal(itemsList)
 	if err != nil {
 		w.WriteHeader(500)
 		w.Write([]byte(err.Error()))
@@ -67,7 +74,16 @@ func AddItemHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		w.WriteHeader(500)
 		w.Write([]byte(err.Error()))
+		fmt.Printf("error %s", err.Error())
+		return
+	}
+	if myShoppingList == nil {
+		fmt.Println("error nil")
+		w.WriteHeader(500)
+		w.Write([]byte("list not initialized"))
 		return
 	}
 	myShoppingList.addItem(name, amount)
+	w.WriteHeader(200)
+	w.Write([]byte("ok"))
 }
