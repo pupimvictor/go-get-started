@@ -58,5 +58,9 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="0" y="23" width="2027" height="1417" key="SettingsEditor/0.23.2560.1417/-1920.271.1920.999@0.23.2560.1417" timestamp="1599616806987" />
+    <state x="0" y="23" width="1771" height="1417" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1599620059845">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="0" y="23" width="1771" height="1417" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.23.2560.1417/-1920.271.1920.999@0.23.2560.1417" timestamp="1599620059845" />
   </component>
 </project>

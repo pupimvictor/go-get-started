@@ -26,6 +26,7 @@ func NewShoppingList(name string) {
 		name:  name,
 		items: []Item{},
 	}
+	fmt.Printf("Shopping list %s initialized\n", name)
 }
 
 func (sl ShoppingList) getItems() ([]Item, error) {
@@ -46,11 +47,13 @@ func (sl *ShoppingList) addItem(name string, amount int) {
 
 func GetItemsHandler(w http.ResponseWriter, r *http.Request) {
 	if myShoppingList == nil {
+		w.WriteHeader(500)
 		w.Write([]byte("list not initialized"))
+		return
 	}
 	items, err := myShoppingList.getItems()
 	if err != nil {
-		w.WriteHeader(404)
+		w.WriteHeader(400)
 		w.Write([]byte(err.Error()))
 		return
 	}
@@ -78,7 +81,6 @@ func AddItemHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if myShoppingList == nil {
-		fmt.Println("error nil")
 		w.WriteHeader(500)
 		w.Write([]byte("list not initialized"))
 		return
