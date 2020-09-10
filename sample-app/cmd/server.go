@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -12,7 +11,7 @@ func main() {
 	shoppingListName := os.Args[1]
 
 	app.NewShoppingList(shoppingListName)
-	fmt.Println("listening on port 5001")
+	log.Println("listening on port 5001")
 
 	http.HandleFunc("/item/get", app.GetItemsHandler)
 	http.HandleFunc("/item/add", app.AddItemHandler)

@@ -3,6 +3,7 @@ package app
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 
 	"net/http"
 	"strconv"
@@ -28,7 +29,7 @@ func NewShoppingList(name string) {
 		name:  name,
 		items: []Item{},
 	}
-	fmt.Printf("Shopping list %s initialized\n", name)
+	log.Printf("Shopping list %s initialized\n", name)
 }
 
 // getItems return shoppingList items if any, error if empty
@@ -46,7 +47,7 @@ func (sl *ShoppingList) addItem(name string, amount int) {
 		Amount: amount,
 	}
 	sl.items = append(sl.items, i)
-	fmt.Printf("%s added to shopping list\n", name)
+	log.Printf("%s added to shopping list\n", name)
 }
 
 // GetItemsHandler getItems in shopping list and write response with formatted json message
@@ -67,7 +68,7 @@ func GetItemsHandler(w http.ResponseWriter, r *http.Request) {
 	//transform items into a list
 	var itemsList []string
 	for _, i := range items {
-		itemsList = append(itemsList, fmt.Sprintf("%d %s\n", i.Amount, i.Name))
+		itemsList = append(itemsList, fmt.Sprintf("%d %s", i.Amount, i.Name))
 	}
 
 	//prepare json payload
@@ -90,7 +91,7 @@ func AddItemHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		w.WriteHeader(500)
 		w.Write([]byte(err.Error()))
-		fmt.Printf("error %s", err.Error())
+		log.Printf("error %s", err.Error())
 		return
 	}
 	if myShoppingList == nil {
