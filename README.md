@@ -6,12 +6,12 @@ https://www.meetup.com/Staten-Island-Computer-Software-Meetup-Group/events/27279
 
 ## Why Go
 
-- simple and small
-- easy to read
-- backwards compatible
-- complete standart library
-- concorrency
-- compiled static linked binary
+- Simple and Small
+- Easy to read
+- Backwards compatible
+- Complete standart library
+- Concorrency
+- Compiled static linked binary
 
 ## Syntax
 
@@ -115,21 +115,51 @@ func main() {
 
 ## The Tooling and Standart Library
 
+go run
+go test
+go build
 go fmt
+...
+https://www.alexedwards.net/blog/an-overview-of-go-tooling
 
-## Exemples
+## Sample App
 
-- cli tool
-- web server
+The Sample app in this repository demonstrates in a simple way how to create your first Go web server and a CLI to interact with it.
+
+The app is a simple Shopping List using memory storage. It supports Add Item and Get Items operations.
+
+- app.go
+  app logic and http requests handlers
+
+- app_test.go
+  app.go unit tests
+
+- go.mod and go.sum
+  Go dependency managemenet files
+
+- cmd/server.go
+  main function for the server. Register http handlers and listen on a tcp port
+
+- cmd/cli.go
+  main function for CLI tool. Reads inputs from OS stdin and makes a http request to the server
 
 ...
 
-## projects
-docker
-k8s
-malware
+## projects and articles
 
-## The Community
+Docker - https://github.com/docker
+
+Go at Cloudflare - https://blog.cloudflare.com/go-at-cloudflare/
+
+FritzFrog (BotNet) - https://www.guardicore.com/2020/08/fritzfrog-p2p-botnet-infects-ssh-servers/
+
+## Learning Go
+
+- A Tour of Go
+https://tour.golang.org/
+
+- justforfunc: Programming in Go
+https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw
 
 - Dave Cheney
 https://dave.cheney.net/practical-go
