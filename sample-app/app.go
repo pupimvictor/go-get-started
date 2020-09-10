@@ -50,6 +50,9 @@ func (sl *ShoppingList) addItem(name string, amount int) {
 	log.Printf("%s added to shopping list\n", name)
 }
 
+
+// ---- HTTP Requests Handlers
+
 // GetItemsHandler getItems in shopping list and write response with formatted json message
 func GetItemsHandler(w http.ResponseWriter, r *http.Request) {
 	//check shoppingList was instantiated by NewShoppingList
@@ -58,6 +61,7 @@ func GetItemsHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("list not initialized"))
 		return
 	}
+
 	items, err := myShoppingList.getItems()
 	if err != nil {
 		w.WriteHeader(400)
@@ -78,15 +82,18 @@ func GetItemsHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(err.Error()))
 		return
 	}
+
 	//write http response with json payload
 	w.Write(jsonItems)
 }
 
 // AddItemHandler decodes request using query parameters and add item to shoppingList
 func AddItemHandler(w http.ResponseWriter, r *http.Request) {
+
 	//getting value from request url
 	name := r.URL.Query().Get("name")
 	amount, err := strconv.Atoi(r.URL.Query().Get("amount"))
+
 	//check error when converting to int
 	if err != nil {
 		w.WriteHeader(500)

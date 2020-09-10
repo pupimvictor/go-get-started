@@ -4,7 +4,6 @@
     <list default="true" id="5c2c420a-0030-4a97-927b-7b57ff9c0f2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/cli.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/cli.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/server.go" afterDir="false" />
     </list>
@@ -45,7 +44,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,29 +81,34 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="0" y="23" width="2027" height="1417" key="#Go_Modules/0.23.2560.1417/-1920.271.1920.999@0.23.2560.1417" timestamp="1599616176489" />
-    <state width="1238" height="389" key="GridCell.Tab.0.bottom" timestamp="1599695673079">
+    <state width="1238" height="389" key="GridCell.Tab.0.bottom" timestamp="1599709413990">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
-    <state width="1238" height="389" key="GridCell.Tab.0.bottom/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673079" />
-    <state width="1238" height="389" key="GridCell.Tab.0.center" timestamp="1599695673078">
+    <state width="1238" height="389" key="GridCell.Tab.0.bottom/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599709413990" />
+    <state width="1238" height="389" key="GridCell.Tab.0.center" timestamp="1599709413989">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
-    <state width="1238" height="389" key="GridCell.Tab.0.center/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673078" />
-    <state width="1238" height="389" key="GridCell.Tab.0.left" timestamp="1599695673078">
+    <state width="1238" height="389" key="GridCell.Tab.0.center/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599709413989" />
+    <state width="1238" height="389" key="GridCell.Tab.0.left" timestamp="1599709413989">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
-    <state width="1238" height="389" key="GridCell.Tab.0.left/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673078" />
-    <state width="1238" height="389" key="GridCell.Tab.0.right" timestamp="1599695673079">
+    <state width="1238" height="389" key="GridCell.Tab.0.left/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599709413989" />
+    <state width="1238" height="389" key="GridCell.Tab.0.right" timestamp="1599709413990">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
-    <state width="1238" height="389" key="GridCell.Tab.0.right/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599695673079" />
-    <state x="0" y="23" width="2027" height="1417" key="SettingsEditor" timestamp="1599616806987">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state width="1238" height="389" key="GridCell.Tab.0.right/0.23.2560.1359/-1920.271.1920.1057@0.23.2560.1359" timestamp="1599709413990" />
+    <state x="0" y="23" width="1331" height="1359" key="SettingsEditor" timestamp="1599777472667">
+      <screen x="0" y="23" width="2560" height="1359" />
     </state>
+    <state x="0" y="23" width="1331" height="1359" key="SettingsEditor/0.23.2560.1359@0.23.2560.1359" timestamp="1599777472667" />
     <state x="0" y="23" width="2027" height="1417" key="SettingsEditor/0.23.2560.1417/-1920.271.1920.999@0.23.2560.1417" timestamp="1599616806987" />
     <state x="0" y="23" width="1771" height="1417" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1599620059845">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="0" y="23" width="1771" height="1417" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.23.2560.1417/-1920.271.1920.999@0.23.2560.1417" timestamp="1599620059845" />
+    <state x="330" y="333" width="670" height="676" key="search.everywhere.popup" timestamp="1599776040957">
+      <screen x="0" y="23" width="2560" height="1359" />
+    </state>
+    <state x="330" y="333" width="670" height="676" key="search.everywhere.popup/0.23.2560.1359@0.23.2560.1359" timestamp="1599776040957" />
   </component>
 </project>

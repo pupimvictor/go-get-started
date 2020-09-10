@@ -10,6 +10,10 @@ import (
 
 func main() {
 	//get os args from execution params
+	if len(os.Args) < 2 {
+		log.Println("Usage: go-cli <item> <amount>")
+		os.Exit(1)
+	}
 	itemName := os.Args[1]
 	itemAmount := os.Args[2]
 

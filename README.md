@@ -4,6 +4,8 @@
 
 https://www.meetup.com/Staten-Island-Computer-Software-Meetup-Group/events/272794111/
 
+### Victor Pupim @victorpupim www.linkedin.com/in/victorpupim
+
 ## Why Go
 
 - Simple and Small
@@ -115,12 +117,12 @@ func main() {
 
 ## The Tooling and Standart Library
 
-go run
-go test
-go build
-go fmt
-...
-https://www.alexedwards.net/blog/an-overview-of-go-tooling
+- go run
+- go test
+- go build
+- go fmt
+- ...
+- https://www.alexedwards.net/blog/an-overview-of-go-tooling
 
 ## Sample App
 
@@ -128,22 +130,15 @@ The Sample app in this repository demonstrates in a simple way how to create you
 
 The app is a simple Shopping List using memory storage. It supports Add Item and Get Items operations.
 
-- app.go
-  app logic and http requests handlers
+- __app.go__ - app logic and http requests handlers
 
-- app_test.go
-  app.go unit tests
+- __app_test.go__ - app.go unit tests
 
-- go.mod and go.sum
-  Go dependency managemenet files
+- __go.mod and go.sum__ - Go dependency managemenet files
 
-- cmd/server.go
-  main function for the server. Register http handlers and listen on a tcp port
+- __cmd/server.go__ - main function for the server. Register http handlers and listen on a tcp port
 
-- cmd/cli.go
-  main function for CLI tool. Reads inputs from OS stdin and makes a http request to the server
-
-...
+- __cmd/cli.go__ - main function for CLI tool. Reads inputs from OS stdin and makes a http request to the server
 
 ## projects and articles
 
